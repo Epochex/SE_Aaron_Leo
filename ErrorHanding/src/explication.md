@@ -1,0 +1,1 @@
+如果我们改变第二段代码中两个catch块中MyChildException和MyParentException的顺序，就会得到一个编译错误。这是因为catch块的顺序是，最具体的异常首先捕获，最一般的异常最后捕获。如果改变catch块的顺序，就会捕获更一般的异常，而不是更具体的异常，这在Java中是不允许的
